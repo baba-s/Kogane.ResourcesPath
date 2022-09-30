@@ -4,7 +4,7 @@ namespace Kogane
 {
     public static class ResourcesPath
     {
-        private static readonly Regex REGEX = new( @"^.*Resources/(.*)\..*" );
+        private static readonly Regex REGEX = new( @"^.*Resources/([^\.]*)\.?.*" );
 
         public static string Get( string assetPath )
         {
